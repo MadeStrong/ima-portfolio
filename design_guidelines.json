@@ -1,0 +1,110 @@
+{
+  "brand_identity": {
+    "name": "IMA",
+    "type": "Creative Professional / Future Agency",
+    "aesthetic": "Dark Mode, Minimal, Premium, Industrial",
+    "core_values": ["Boldness", "Precision", "Future-Forward"],
+    "logo_url": "https://customer-assets.emergentagent.com/job_ee8839b2-9350-41a5-9777-cc145839fd61/artifacts/dh6cyvhn_3.png"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Space Grotesk, sans-serif",
+      "weights": ["500", "700"],
+      "usage": "All headings (H1-H6), Navigation links, Big Numbers",
+      "letter_spacing": "-0.02em"
+    },
+    "body": {
+      "font_family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Paragraphs, UI elements, Admin Dashboard data",
+      "letter_spacing": "0em"
+    },
+    "cdn_import": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+  },
+  "colors": {
+    "palette": {
+      "primary": "#E10600",
+      "background": "#0B0B0B",
+      "surface": "#1F1F1F",
+      "surface_hover": "#2A2A2A",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#B3B3B3",
+      "border": "#1F1F1F",
+      "error": "#EF4444",
+      "success": "#22C55E"
+    },
+    "usage_rules": {
+      "primary": "Use STRICTLY for CTAs, active states, and minimal accents. DO NOT overuse.",
+      "background": "Global body background. NO gradients.",
+      "surface": "Card backgrounds, Sidebar background.",
+      "border": "Dividers and card borders. 1px width."
+    }
+  },
+  "layout_system": {
+    "grid_strategy": {
+      "public_portfolio": "Bento Grid / Tetris Mode. Mix of 1x1, 2x1, and 2x2 blocks.",
+      "admin_dashboard": "High Density Grid. Sidebar + Main Content Area.",
+      "spacing": "Generous padding (p-8 to p-24) for public pages. Compact (p-4 to p-6) for admin."
+    },
+    "container": {
+      "max_width": "max-w-7xl",
+      "center": "mx-auto",
+      "padding": "px-4 sm:px-6 lg:px-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#E10600] text-white hover:bg-[#C00500] rounded-full px-8 py-3 font-medium transition-all",
+      "secondary": "bg-transparent border border-[#1F1F1F] text-white hover:border-white rounded-full px-8 py-3 transition-all",
+      "ghost": "text-[#B3B3B3] hover:text-white transition-colors"
+    },
+    "cards": {
+      "style": "bg-[#0B0B0B] border border-[#1F1F1F] hover:border-[#333] transition-colors rounded-xl overflow-hidden",
+      "content_padding": "p-6"
+    },
+    "inputs": {
+      "style": "bg-[#0B0B0B] border border-[#1F1F1F] focus:border-[#E10600] text-white rounded-lg h-12 px-4 outline-none transition-colors placeholder:text-[#444]"
+    },
+    "navigation": {
+      "public": "Floating or Sticky top. Blur backdrop (bg-black/80 backdrop-blur-md). Minimal links.",
+      "admin": "Fixed Sidebar (Left). Dark surface (#1F1F1F). Collapsible."
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "scroll": "lenis (smooth scrolling)",
+    "transitions": {
+      "page": "Opacity fade + slight Y-axis slide",
+      "hover": "Duration 0.2s ease-out",
+      "stagger": "Stagger children by 0.1s"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1767477665606-a29603e1c479?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHJlZCUyMGJsYWNrJTIwZGlnaXRhbCUyMGFydHxlbnwwfHx8fDE3NzAwMzI4Mzd8MA&ixlib=rb-4.1.0&q=85",
+      "about_section": "https://images.unsplash.com/photo-1702479744031-2bf1f4bdfd8b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBjcmVhdGl2ZSUyMGFnZW5jeSUyMHRlYW0lMjBkYXJrJTIwbW9kZXxlbnwwfHx8fDE3NzAwMzI4NDF8MA&ixlib=rb-4.1.0&q=85",
+      "portfolio_placeholder": "https://images.unsplash.com/photo-1600590008363-1c7dcf5d568d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwzfHxncmFwaGljJTIwZGVzaWduJTIwcG9ydGZvbGlvJTIwc2hvd2Nhc2V8ZW58MHx8fHwxNzcwMDMyODQ2fDA&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": "lucide-react"
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lenis' for smooth scrolling and 'framer-motion' for animations.",
+    "2. THEME: Force DARK MODE globally. Do not implement a light mode toggle. The brand is strictly dark.",
+    "3. FONTS: Import 'Space Grotesk' and 'Inter' from Google Fonts in index.css or layout.",
+    "4. PUBLIC PAGES: Build 'Home', 'Portfolio', 'Services', 'About', 'Contact' using the 'Tetris' grid layout. Use large typography (Space Grotesk) for impact.",
+    "5. ADMIN DASHBOARD: Build a layout with a Sidebar and Topbar. Use 'Inter' for data density. Create pages for 'Dashboard', 'Pages', 'Portfolio', 'Content', 'Settings'.",
+    "6. CMS FEATURES: Mock the CMS functionality. The 'Content Editor' should be a form that updates state (mocked). The 'Portfolio Manager' should allow adding/removing items (mocked).",
+    "7. EMBEDS: Use 'react-player' or standard iframes for YouTube/Vimeo/TikTok embeds in the portfolio.",
+    "8. FORMS: Use 'react-hook-form' + 'zod' for the Contact form and Admin forms.",
+    "9. ACCESSIBILITY: Ensure contrast ratios are met. Use aria-labels where necessary.",
+    "10. TESTING: Add 'data-testid' to all interactive elements."
+  ],
+  "universal_guidelines": [
+    "Don't make generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for the nav bar.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "NEVER use AI assistant Emoji characters."
+  ]
+}
