@@ -1,12 +1,18 @@
 import { NextResponse } from 'next/server'
-import { supabase } from '@/lib/supabase'
+import { cookies } from 'next/headers'
+import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 
 export async function GET() {
-  const { data, error } = await supabase.auth.getSession()
+  const supabase = createRouteHandlerClient({ cookies })
+
+  const {
+    data: { session },
+    error,
+  } = await supabase.auth.getSession()
 
   return NextResponse.json({
-    ok: !error,
-    session: data.session,
+    ok: !error && !!session,
+    session,
     error: error?.message ?? null,
   })
 }
